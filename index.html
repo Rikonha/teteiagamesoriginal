@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGames</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+            <span class="cabecalho__menu-games container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">PLATAFORMAS
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">PLAY STATION</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">XBOX</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">NINTENDO SWITCH</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">PC</a>
+            </li>
+        </ul>
+        <img src="img/Logo.svg" alt="logo AluraBooks">
+        
+    </div>
+    <div class="container">
+        <a href="#">
+            <img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem">
+        </a>
+        <a href="#" class="container__link">
+            <img src="img/Compras.svg" alt="Compras" class="container__imagem">
+            <p class="container__texto">Minha Sacola</p>
+        </a>
+        <a href="#" class="container__link">
+            <img src="img/Usuario.svg" alt="Usuario" class="container__imagem">
+            <p class="container__texto">Meu Perfil</p>
+        </a> 
+    </div>
+        </header>   
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Aqui você encontra os novos lançamentos e os mais hypados do momento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima aventura?"> 
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/harry.jpg" alt="Hogwarts Legacy"></div>
+      <div class="swiper-slide"><img src="img/elnden ring.jpeg" alt="Elden Ring"></div>
+      <div class="swiper-slide"><img src="img/zelfa.jpg" alt="The Legend Of Zelda Tears OF The Kingdom Cover"></div>
+      <div class="swiper-slide"><img src="img/ZADCB69julrCk27zIoc1fWn6vWkHCpoDFCGjXL8imtg_350x200_1x-0.webp" alt="re village"></div>
+      <div class="swiper-slide"><img src="img/diablo iv.jpg" alt="Diablo IV"></div>
+      <div class="swiper-slide"><img src="img/aaaaa.png" alt="dead island 2"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    
+  </div>
+  <div class="card">
+    <!-- 1º linha -->
+    <div class="card__descricao">
+        <!-- 1º coluna -->
+        <div class="descricao">
+            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descricao__titulo__game">Forza Horizon 5</h2>
+            <p class="descricao__texto">Forza Horizon 5 é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios.</p>
+        </div>
+        <img src="img/forza horizon 5.svg" class="forza" alt="forza">
+        <!-- 2º coluna -->
+   
+    </div>
+
+    <!-- 2º linha -->
+    <div class="card__botoes">
+        <!-- 1º coluna -->
+        <ul class="botoes">
+            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+            <li class="botoes__item"><img src="img/Compras.svg" alt="compras"></li>
+        </ul>
+      
+        <!-- 2º coluna -->
+        <a href="#" class="botoes__ancora">Saiba mais</a>
+        
+    </div>
+    
+</div>
+  
+        </section>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script> 
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+         }); 
+        </script>
+         <section class="carrossel2">
+            <h2 class="carrossel__titulo2">Mais Vendidos</h2>
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/red.jpeg" alt="Red Dead redepition 2"></div>
+      <div class="swiper-slide"><img src="img/tra.jpg" alt="The Outlast Trials"></div>
+      <div class="swiper-slide"><img src="img/zelfa.jpg" alt="The Legend Of Zelda Tears OF The Kingdom Cover"></div>
+      <div class="swiper-slide"><img src="img/aaaaa.png" alt="Dead Island 2"></div>
+      <div class="swiper-slide"><img src="img/mine.jpeg" alt="Minecraft Legions"></div>
+      <div class="swiper-slide"><img src="img/gta.jpeg" alt="Grand Theft Auto V"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    
+  </div>
+  <div class="card2">
+    <!-- 1º linha -->
+    <div class="card__descricao2">
+        <!-- 1º coluna -->
+        <div class="descricao2">
+            <h3 class="descricao__titulo2">Jogo do Mês</h3>
+            <h4 class="estrelinhas"> <img src="img/Estrelinhas.svg" alt="estrelas"></h4>
+            <h2 class="descricao__titulo__game2">Uncharted</h2>
+            <p class="descricao__texto2">Jogue na pele de Nathan e Chloe Frazer em aventuras separadas e acompanhe como eles são obrigados a confrontar o passado e forjar os próprios legados.</p>
+        </div>
+        <img src="img/uncharted.svg" class="forza" alt="forza">
+        <!-- 2º coluna -->
+      
+    </div>
+
+    <!-- 2º linha -->
+    <div class="card__botoes2">
+        <!-- 1º coluna -->
+        <ul class="botoes2">
+            <li class="botoes__item2"><img src="img/Favoritos.svg" alt="favoritos"></li>
+            <li class="botoes__item2"><img src="img/Compras.svg" alt="compras"></li>
+        </ul>
+        
+        <!-- 2º coluna -->
+        <a href="#" class="botoes__ancora2">Saiba mais</a>
+        
+    </div>
+    
+
+        </section>
+        
+        <section class="topicos">
+            <h2 class="topico__titulo">TÓPICOS MAIS VISITADOS</h2>
+            <ul class="topico__lista">
+                    <li class="topico__item">
+                    <a href="#" class="topico__link">AÇÃO</a>
+                    </li>
+                    <li class="topico__item">
+                    <a href="#" class="topico__link">AVENTURA</a>
+                    </li>
+                    <li class="topico__item">
+                    <a href="#" class="topico__link">MMORPG</a>
+                    <li class="topico__item">
+                        <a href="#" class="topico__link">FPS</a>
+                    </li>
+                    <li class="topico__item">
+                        <a href="#" class="topico__link">SUSPENSE</a>
+                    </li>
+                    <li class="topico__item">
+                        <a href="#" class="topico__link">MULTIPLAYER</a>
+                    </li>
+                    <li class="topico__item">
+                        <a href="#" class="topico__link">MINECRAFT</a>
+                    </li>
+                    </li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto"> Atualização de games, promoções e lançamentos.</p>
+            <input type="e-mail" placeholder="Cadastre seu e-mail" class="contato__e-mail">
+        </section>
+
+        <hr/>
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Grupo Alura</h2>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script> 
+          const swipe= new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+         }); 
+         
+        </script>
+
+
+
+</body>
+
+</html>
